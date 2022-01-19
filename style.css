@@ -8,7 +8,7 @@ html {
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background: rgba(114,207,206,0.25);
+    background: #f1f1f1;
 }
 
 /* -------------------- Navigation -------------------- */
@@ -19,7 +19,7 @@ body {
     background: #428089;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -300px;
     border-right: 1px dashed rgba(114,207,206,0.25);
     z-index: 5; 
     transition: all 0.2s ease-in-out;
@@ -108,6 +108,11 @@ body {
     }    
     .menu-visible {
         left: 0px!important;
+    }
+
+    .cercle-portait {
+        width: 90px;
+        height: 90px;
     }
 
     .blocs-menu:nth-child(7) {
@@ -725,7 +730,7 @@ h1 {
 .range-cont {
     position: relative;
 }
-.titre-exp {
+.titre-comp {
     font-size: 40px;
     text-align: center;
     margin: 80px 0 90px 0;
@@ -821,7 +826,7 @@ h1 {
     .section-range {
         padding-bottom: 100px;
     }
-    .titre-exp {
+    .titre-comp {
         font-size: 30px;
         margin: 50px 0 60px 0;
     }

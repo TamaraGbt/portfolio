@@ -27,35 +27,35 @@
         </div>
         <div class="blocs-menu">
             <span class="nav-menu-item">
-                <a href="#">
+                <a href="#accueil">
                     Accueil
                 </a>
             </span>
         </div>
         <div class="blocs-menu">
             <span class="nav-menu-item">
-                <a href="#">
+                <a href="#pres">
                     Présentation
                 </a>
             </span>
         </div>
         <div class="blocs-menu">
             <span class="nav-menu-item">
-                <a href="#">
+                <a href="#port">
                     Portfolio
                 </a>
             </span>
         </div>
         <div class="blocs-menu">
             <span class="nav-menu-item">
-                <a href="#">
+                <a href="#range">
                     Compétences
                 </a>
             </span>
         </div>
         <div class="blocs-menu">
             <span class="nav-menu-item">
-                <a href="#">
+                <a href="#contact">
                     Contact
                 </a>
             </span>
@@ -63,7 +63,7 @@
 
         <div class="blocs-menu">
             <div class="logo-cercle">
-                <a href="#">
+                <a href="#contact">
                     <img src="ressources/contact.svg" alt="logo contact">
                 </a>
             </div>
@@ -91,7 +91,7 @@
                 </div>
             </a>
         </div>
-        <a href="#">
+        <a href="#pres">
             <div class="btn-rond">
                 <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
             </div>
@@ -99,7 +99,7 @@
     </section>
 
     <!-- Section présentation -->
-    <section class="presentation" id="prez">
+    <section class="presentation" id="pres">
         <h2 class="titre-pres">Qui suis-je ?</h2>
 
         <div class="container-presentation">
@@ -197,7 +197,7 @@
 
     <!-- Section Range -->
     <section class="section-range" id="range">
-        <h2 class="titre-exp">Mes compétences</h2>
+        <h2 class="titre-comp">Mes compétences</h2>
         <div class="grille-skill">
             <div class="range-cont">
                 <p class="label-skill">JavaScript</p>
@@ -316,9 +316,9 @@
     <section class="section-contact" id="contact">
         <h2><strong>Rentrons</strong> en Contact</h2>
         <div class="container-form">
-            <form action="" class="form-bloc">
+            <form action="" method="post" class="form-bloc" >
                 <div class="form-groupe">
-                    <label for="prenom">Prénom</label>
+                    <label for="prenom">Prénom<span>*</span></label>
                     <input type="text" required maxlength="20" id="prenom">
                 </div>
                 <div class="form-groupe">
@@ -326,15 +326,14 @@
                     <input type="text" required maxlength="20" id="nom">
                 </div>
                 <div class="form-groupe">
-                    <label for="email">Email</label>
+                    <label for="email">Email<span>*</span></label>
                     <input type="email" required id="email">
                 </div>
                 <div class="form-groupe">
-                    <textarea name="" id="txt" placeholder="Votre message" required></textarea>
+                    <textarea name="message" id="txt" placeholder="Votre message" required htmlspecialchars></textarea>
                 </div>
                 <div class="form-groupe">
-                    <label for="submit" value="ENVOYER"></label>
-                    <input type="submit" class="button-sub" required id="submit">
+                    <input type="submit" class="button-sub" required id="submit" value="ENVOYER">
                 </div>
             </form>
         </div>
@@ -344,8 +343,11 @@
         <p>TamaraG &copy; 2022</p> | Tout Droits réservés
     </footer>
 
-
-
+    <!-- ScrollMagic et Greensock CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="app.js"></script>
 </body>
