@@ -46,21 +46,6 @@ typewriter
 .start()
 
 
-// Animation contact
-
-const inputFields = document.querySelectorAll('input');
-
-for(let i = 0; i< inputFields.length; i++) {
-    let field = inputFields[i];
-    field.addEventListener('input', (e) => {
-        if(e.target.value !== '') {
-            e.target.parentNode.classList.add('animation');
-        } else {
-            e.target.parentNode.classList.remove('animation');
-        }
-    })
-}
-
 // Anim GSAP + ScrollMagic
 
 const navbar = document.querySelector('.nav-gauche');

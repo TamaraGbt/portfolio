@@ -194,7 +194,7 @@ body {
     background-size: cover;
     background-position: right;
     height: 100vh;
-    min-height: 900px;
+    min-height: 800px;
     width: calc(100% - 300px);
     margin-left: auto;
     position: relative;
@@ -203,7 +203,7 @@ h1 {
     font-size: 90px;
     font-family: 'Abril Fatface', sans-serif;
     margin: 0 60px;
-    padding-top: 300px;
+    padding-top: 210px;
     color: #428089;
 }
 .txt-animation {
@@ -270,6 +270,7 @@ h1 {
     box-shadow: 0 0 0 0 #428089;
     background: #428089;
     animation: pulse 1.3s infinite;
+    color: #f1f1f1;
 }
 @keyframes pulse {
     to {
@@ -278,12 +279,13 @@ h1 {
 }
 .logo-btn-rond-acc {
     width: 35px;
+
 }
 
 /* Médias Accueil */
 @media screen and (max-width: 2100px) {
     h1 {
-        padding-right: 400px;
+        padding-right: 380px;
     }
 }
 @media screen and (max-width: 1400px) {
@@ -304,20 +306,19 @@ h1 {
         background-position: center;
     }
     h1 {
-        padding-top: 230px;
         padding-right: 660px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     h1 {
-        padding-right: 590px;
+        padding-right: 570px;
     }
 }
 
 @media screen and (max-width: 1100px) {
     h1 {
-        padding-right: 490px;
+        padding-right: 470px;
     }
 }
 
@@ -329,7 +330,7 @@ h1 {
     h1 {
         margin: 0 30px 0 30px;
         padding-top: 130px;
-        padding-right: 420px;
+        padding-right: 400px;
     }
     .accueil p {
         margin: 20px 0 20px 30px;
@@ -365,7 +366,7 @@ h1 {
 
 @media screen and (max-width: 600px) {
     h1 {
-        padding-right: 250px;
+        padding-right: 230px;
     }
 }
 
@@ -622,7 +623,7 @@ h1 {
 .item {
     margin: 20px;
     width: 420px;
-    height: 400px;
+    height: 430px;
     background: #f1f1f1;
     color: #2B2B2B;
     transition: transform 0.3 ease-out;
@@ -633,7 +634,7 @@ h1 {
 }
 .cont-img-port {
     width: 100%;
-    height: 220px;
+    height: 260px;
     overflow: hidden;
 }
 .cont-img-port img {
@@ -861,7 +862,7 @@ h1 {
     justify-content: center;
 }
 .barre-verticale {
-    height: 1200px;
+    height: 1400px;
     width: 5px;
     background: #000;
     display: flex;
@@ -874,19 +875,21 @@ h1 {
 .boule-ico {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    border: 1px solid #2b2b2b;
+    border: 2px solid #2b2b2b;
     background: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .boule-ico img {
-    width: 49px;
+    width: 48px;
+} 
+.boule-ico:nth-child(6){
     border-radius: 50%;
 } 
 .boule-ico:nth-child(6) img{
     width: 25px;
+    border-radius: 50%;
 } 
 
 .flex-cont-bloc-exp {
@@ -932,6 +935,9 @@ h1 {
 .bloc5 {
     background: #fde7ab;
 }
+.bloc6 {
+    background: #ffdddd;
+}
 .titre-section-bloc {
     font-family: 'Abril Fatface', sans-serif;
     font-size: 25px;
@@ -947,7 +953,7 @@ h1 {
 
 @media screen and (max-width: 950px) {
     .barre-verticale {
-        height: 1800px;
+        height: 2100px;
     }
     .bloc {
         height: 320px;
@@ -969,7 +975,7 @@ h1 {
         height: 500px;
     }
     .barre-verticale {
-        height: 2700px;
+        height: 3150px;
     }
 }
 
@@ -981,7 +987,7 @@ h1 {
         height: 560px;
     }
     .barre-verticale {
-        height: 3000px;
+        height: 3500px;
     }
 }
 
@@ -1039,108 +1045,31 @@ h1 {
     height: auto;
 }
 
-.section-contact h2 {
-    text-align: center;
-    color: #2b2b2b;
-    font-size: 48px;
-    font-weight: 400;
-    margin-bottom: 50px;
-    padding: 70px 0 0 300px;
-}
 .section-contact h2 strong {
     font-weight: 900;
 }
 .container-form {
     margin: 0 auto;
     width: 70%;
-    padding-left: 300px;
-}
-.form-groupe {
-    position: relative;
-    display: flex;
-    margin-bottom: 45px;
-}
-.form-groupe label {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    color: #aaa;
-    font-size: 20px;
-    transition: 0.4s ease-out;
-}
-.form-groupe input {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    border: none;
-    outline: none;
-    background: rgba(114,207,206,0.15);
-    border-bottom: 3px solid #aaa;
-    color: #666;
-    font-size: 20px;
-    transition: 0.4s ease-out;
-}
-textarea {
-    width: 100%;
-    height: 200px;
-    border: none;
-    border: 3px solid #aaa;
-    border-radius: 3px;
-    padding: 5px;
-    resize: none;
-    outline: none;
-    font-size: 20px;
-    transition: 0.4s all ease-out;
-    background: rgba(114,207,206,0.25);
-}
-textarea::placeholder {
-    font-size: 20px;
-    opacity: 0.5;
-}
-textarea:focus {
-    border-color: #428089;
-}
-.form-groupe:nth-child(5){
-    margin-bottom: 25px;
-    justify-content: flex-start;
-}
-.form-groupe .button-sub {
-    display: block;
-    width: auto;
-    padding: 15px 60px;
-    border: 3px solid rgb(144,144,144);
-    border-radius: 999px;
-    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
-    background-size: 200%;
-    color: #666;
-    font-size: 24px;
-    font-weight: 500;
-    cursor: pointer;
-}
-.form-groupe .button-sub:hover {
-    color: #f1f1f1;
-    background-position: 100%;
-    border: 3px solid #f1f1f1;
+    padding: 70px 0 0 300px;
+    margin-bottom: 50px;
 }
 
+.container-form iframe {
+    width: 100%; 
+    height: 1050px; 
+    background: transparent; 
+    border: 3px solid #428089;
+}
+
+
 @media screen and (max-width: 1300px){
-    .section-contact h2 {
-        padding: 70px 0 0 0;
-    }
     .container-form {
         padding-left: 0;
     }
-    .form-groupe:nth-child(5) {
-        justify-content: center;
+    .section-contact h2 {
+        padding-left: 0;
     }
-}
-/* Animation Contact */
-.form-groupe:focus-within label,
-.form-groupe.animation label {
-    top: 0px;
-    transform: translateY(-100%);
-    color: #428089;
 }
 
 /* -------------------- Footer -------------------- */
