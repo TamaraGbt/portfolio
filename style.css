@@ -511,6 +511,12 @@ h1 {
 .pres-gauche p {
     text-align: justify;
 }
+.pres-gauche ul {
+    text-align: justify;
+}
+.pres-gauche li {
+    margin-left: 30px;
+}
 .pres-droite {
     width: 600px;
     flex-shrink: 0;
@@ -566,6 +572,9 @@ h1 {
         letter-spacing: 0px;
     }
     .pres-gauche p {
+        font-size: 16px;
+    }
+    .pres-gauche ul {
         font-size: 16px;
     }
     .pres-droite {
