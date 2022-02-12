@@ -97,7 +97,6 @@ const portfolioContainer = document.querySelector('.portfolio');
 const titrePortfolio = document.querySelector('.titre-port');
 const itemPortfolio = document.querySelectorAll('.vague1');
 
-
 const tlPortfolio = new TimelineMax();
 
 tlPortfolio
@@ -145,6 +144,7 @@ const scene4 = new ScrollMagic.Scene({
 .addTo(controller)
 
 
+
 // Animation Range
 
 const sectionComp = document.querySelector('.section-range');
@@ -169,3 +169,24 @@ const scene5 = new ScrollMagic.Scene({
 })
 .setTween(tlCompetences)
 .addTo(controller)
+
+// Fenetre modale
+const btns = document.querySelectorAll('.btn-modal');
+const itemsHover = document.querySelectorAll('.item');
+const modaleEquipement = document.querySelector('.modal');
+const fermetureModale = document.querySelector('.fermeture-modal');
+let modaleActive = false;
+
+btns.forEach(btn => {
+    btn.addEventListener('click',  (e) => {
+        modaleEquipement.classList.add('active-modal');
+        items.style.transition = "none"; 
+        modaleActive = true;
+    })
+})
+
+modaleEquipement.addEventListener('click', () => {
+    modaleEquipement.classList.remove('active-modal');
+    items.style.transition = "transform 0.3 ease-out"; 
+    modaleActive = false;
+})
