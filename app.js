@@ -172,21 +172,20 @@ const scene5 = new ScrollMagic.Scene({
 
 // Fenetre modale
 const btns = document.querySelectorAll('.btn-modal');
-const itemsHover = document.querySelectorAll('.item');
-const modaleEquipement = document.querySelector('.modal');
-const fermetureModale = document.querySelector('.fermeture-modal');
-let modaleActive = false;
+const allModals = document.querySelectorAll('.modal');
 
 btns.forEach(btn => {
     btn.addEventListener('click',  (e) => {
-        modaleEquipement.classList.add('active-modal');
-        items.style.transition = "none"; 
-        modaleActive = true;
+        console.log(e.target.getAttribute('data-index'));
+        modalX = document.getElementById('modal'+e.target.getAttribute('data-index'));
+        console.log(modalX);
+        modalX.classList.add('active-modal');
+
     })
 })
 
-modaleEquipement.addEventListener('click', () => {
-    modaleEquipement.classList.remove('active-modal');
-    items.style.transition = "transform 0.3 ease-out"; 
-    modaleActive = false;
+allModals.forEach(modal => {
+    modal.addEventListener('click', () => {
+        modal.classList.remove('active-modal');
+    })
 })

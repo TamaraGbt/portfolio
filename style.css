@@ -732,6 +732,19 @@ h1 {
     padding: 5px 10px;
     font-size: 20px;
 }
+.modal-contenu li {
+    list-style-type: disc;
+    margin: 0 30px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 90%;
+    line-height: 5px;
+}
+.modal-contenu a {
+    color: #2B2B2B;
+    text-decoration: none;
+    cursor: pointer;
+}
 .fermeture-modal {
     position: absolute;
     z-index: 4000;
