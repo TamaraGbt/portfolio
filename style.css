@@ -637,6 +637,7 @@ h1 {
     color: #2B2B2B;
     transition: transform 0.3 ease-out;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
 }
 /*.item:hover {
     transform: translateY(-5px);
@@ -672,7 +673,9 @@ h1 {
     border: 1px solid #2B2B2B;
     border-radius: 3px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    top: auto;
+    bottom: 0;
     overflow: hidden;
 }
 
@@ -754,6 +757,11 @@ h1 {
         margin: 50px 0 70px;
         padding-left: 0;
     }
+    .fermeture-modal {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -768,10 +776,15 @@ h1 {
         height: auto;
     }
     .modal-contenu h4 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .modal-contenu p {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .fermeture-modal {
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -780,10 +793,10 @@ h1 {
         height: 380px;
     }
     .modal-contenu h4 {
-        font-size: 16px;
+        font-size: 14px;
     }
     .modal-contenu p {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
