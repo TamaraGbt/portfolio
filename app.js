@@ -21,8 +21,8 @@ if(window.matchMedia('(max-width: 1300px')) {
 // Animation écriture
 const txtAnim = document.querySelector('.txt-animation');
 let typewriter = new Typewriter(txtAnim, {
-    loop: false,
-    deleteSpeed: 20
+    loop: true,
+    deleteSpeed: 25
 })
 
 typewriter
@@ -30,16 +30,13 @@ typewriter
 .changeDelay(20)
 .typeString('Moi c\'est Tamara')
 .pauseFor(300)
-.typeString(', <strong>Développeuse Front-End</strong> !')
+.typeString(', <span style="color : #D68A7C; font-weight: bold;">Développeuse Front-End</span>')
 .pauseFor(1000)
-.deleteChars(12)
-.typeString('<span style="color : #72CECF; font-weight: bold;"> Javascript</span> !')
+.deleteChars(22)
+.typeString('<span style="color : #428089; font-weight: bold;">Designer</span>')
 .pauseFor(1000)
-.deleteChars(12)
-.typeString('<span style="color : #2B2B2B; font-weight: bold;"> React.js</span> !')
-.pauseFor(1000)
-.deleteChars(11)
-.typeString('<span style="color : #428089; font-weight: bold;"> Vue.js</span> !')
+.deleteChars(9)
+.typeString('<span style="color : #8A5349; font-weight: bold;"> Webdesigner </span>')
 .start()
 
 
